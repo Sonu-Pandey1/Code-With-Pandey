@@ -42,12 +42,10 @@
 } */
 
 
-.navbarbtns>.libtns{
-  border:none;
-  background-color: #6B21A8;
-  border-radius: 10px;
-  color: white;
-  /* font-size: 15px; */
+*{
+  /* font-family: ui-sans-serif,system-ui,'-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; */
+/* font-family: 'Courier New', Courier, monospace; */
+  /* font-family:poopins; */
 }
 
 .libtnmoon{
@@ -55,10 +53,39 @@
   color: #6B21A8;
  
 }
-.navbarbtns>.ggg{
+.navb{
+  border-bottom: 1px groove rgba(128, 128, 128, 0.189);
+}
+.navbarbtnli>.darkmodeIcon{
   /* background-color: rgb(224, 30, 30); */
   background-color: transparent;
   border-radius: 20px;
   border: none;
 }
+.navbarbtnli>.navbarbtn{
+ background-color: rgb(126 34 206);
+ color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar-nav>li{
+  font-weight: 500;
+}
+.navul>li :hover{
+  color: rgb(226 34 206);
+  /* background-color: rgb(0, 255, 157); */
+  text-decoration: underline;
+}
+.font-color-700{
+  color:rgb(126, 34, 206);
+}
+.font-color-700:hover{
+  color:rgb(126, 34, 206);
+}
+.title{
+  font-weight: bold;
+
+}
+
 
