@@ -40,3 +40,25 @@
 .read-the-docs {
   color: #888;
 } */
+
+
+.navbarbtns>.libtns{
+  border:none;
+  background-color: #6B21A8;
+  border-radius: 10px;
+  color: white;
+  /* font-size: 15px; */
+}
+
+.libtnmoon{
+  font-size: 25px;
+  color: #6B21A8;
+ 
+}
+.navbarbtns>.ggg{
+  /* background-color: rgb(224, 30, 30); */
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+}
+
