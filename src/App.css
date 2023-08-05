@@ -1,51 +1,111 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
+/* navbar  */
 
 *{
-  /* font-family: ui-sans-serif,system-ui,'-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; */
-/* font-family: 'Courier New', Courier, monospace; */
-  /* font-family:poopins; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+   /* font-family:poopins; */
+}
+.libtnmoon{
+  font-size: 25px;
+  color: #6B21A8;
+}
+.navb{
+  border-bottom: 1px groove rgba(128, 128, 128, 0.189);
+}
+.navbarbtnli>.darkmodeIcon{
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+}
+.navbarbtnli>.navbarbtn{
+ background-color: rgb(126 34 206);
+ color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar-nav>li{
+  font-weight: 500;
+}
+.font-color-700{
+  color:rgb(126, 34, 206);
+  cursor: pointer;
+}
+.font-color-700:hover{
+  color:rgb(126, 34, 206);
+}
+.title{
+  font-weight: bold;
+}
+.active{
+  color: #6B21A8 !important;
 }
 
+/* section 1 */
+/* home */
 
+.heroSection{
+  
+}
+.heroSectionRow{
+  height: 63vh;
+  width: auto;
+}
+.heroSectionLeftDiv{
+  padding: 80px 30px;
+}
+.heroSectionLeftDiv h1{
+  font-weight: 600;
+  font-size: 2.2rem;
+  
+}
+.heroSectionLeftDiv h1 span{
+ color: #6B21A8;
+}
+.heroSectionLeftDiv p{
+/* text-align: justify; */
+font-weight: 400;
+}
+.heroSectionLeftDiv h6{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  
+}
+.heroSectionBtns button{
+  font-size: 14px;
+  
+}
+.mainimg{
+  height: 95%;
+  width: 100%;
+  object-fit: contain;
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+  background: linear-gradient(rgba(24, 29, 56, 0.2), rgba(24, 29, 56, 0.3)),
+    url("/mainImg.avif");
+    background-size: 100% 100%;
+  
+}
+
+.heroSectionRightDiv{
+  margin: 0px;
+  padding: 0px;
+  /* background-color: #6B21A8; */
+  /* padding-bottom: 20px ; */
+  
+}
+
+/* section 2 */
+
+.section2 h1{
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+
+/* typing animation */
+.Typinganimation{
+  color: #6B21A8;
+}
