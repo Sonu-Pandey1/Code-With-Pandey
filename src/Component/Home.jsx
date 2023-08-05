@@ -1,13 +1,14 @@
 // import React from 'react'
 // import "/mainImg.avif"
 import Typed from "react-typed"
+import CourseCard from "./CourseCard"
 
 export default function Home() {
   return (
     <div>
-      <section className="container-fulid  heroSection ">
+      <section className="container-fulid  heroSection  ">
         <div className="row mx-5  heroSectionRow   ">
-          <div className="col ps-5  col-6  heroSectionLeftDiv">
+          <div className="col ps-5  col-6 heroSectionLeftDiv ">
             <div className="animationleftdiv">
               <h1>Welcome to
                 <Typed className="Typinganimation px-1"
@@ -45,7 +46,7 @@ export default function Home() {
           <div className="col col-6 heroSectionRightDiv">
 
             <div className="mainimg">
-              {/* <img src="/mainImg.avif" alt="error" /> */}
+              {/* <img className="img-fluid" src="/mainImg.avif" alt="error" /> */}
 
             </div>
           </div>
@@ -54,6 +55,15 @@ export default function Home() {
 
       <section className="section2">
         <h2 className="text-center mt-3 ">Recommended Courses</h2>
+        <div className="courseCards bg-danger">
+         <div className="cardsWrapper mx-5 px-4 my-5">
+         <div className="cardWrapper d-flex justify-content-between ">
+            <CourseCard img={"https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fpython-100-days-of-code-1%2F7wnove7K-ZQ-HD.jpg&w=384&q=75"}/>
+            <CourseCard/>
+            <CourseCard/>
+        </div>
+         </div>
+        </div>
       </section>
     </div>
   )

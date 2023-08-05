@@ -61,7 +61,7 @@ export default function Navbar() {
             <nav className="navbar    navbar-expand-lg mx-4  p-1">
                 <div className="container-fluid">
                     {/* <NavLink className="navbar-brand font-color-700 title " to="/"><ImHome /></NavLink> */}
-                    <btn onClick={()=>navigate("/")} className="navbar-brand font-color-700 title"><ImHome /></btn>
+                    <button onClick={()=>navigate("/")} className="navbar-brand font-color-700 title homeicon"><ImHome className="homeiconmain" /></button>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

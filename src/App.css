@@ -42,6 +42,19 @@
 .active{
   color: #6B21A8 !important;
 }
+.homeicon{
+  border: none;
+  color: #6B21A8;
+}
+.homeicon .homeiconmain{
+  color: #6B21A8;
+}
+.navContainer{
+  position:sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+}
 
 /* section 1 */
 /* home */
@@ -50,8 +63,8 @@
   
 }
 .heroSectionRow{
-  height: 63vh;
-  width: auto;
+  /* height: 63vh;
+  width: auto; */
 }
 .heroSectionLeftDiv{
   padding: 80px 30px;
@@ -73,6 +86,7 @@ font-weight: 400;
   font-size: 1.5rem;
   margin-top: -5px;
   margin-bottom: 10px;
+  /* height: 20px; */
   
 }
 .heroSectionBtns button{
@@ -82,17 +96,20 @@ font-weight: 400;
 .mainimg{
   height: 95%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
   background: linear-gradient(rgba(24, 29, 56, 0.2), rgba(24, 29, 56, 0.3)),
     url("/mainImg.avif");
-    background-size: 100% 100%;
+    background-size: 100% 100% ;
   
 }
 
 .heroSectionRightDiv{
   margin: 0px;
   padding: 0px;
+  /* height: 30vw; */
   /* background-color: #6B21A8; */
   /* padding-bottom: 20px ; */
   
@@ -108,4 +125,16 @@ font-weight: 400;
 /* typing animation */
 .Typinganimation{
   color: #6B21A8;
+}
+.section2{
+  height: 80vh;
+  width: 100%;
+}
+.courseCards{
+  height: 80vh;
+  width: 100%;
+}
+.cardWrapper{
+  /* display: flex;
+  justify-content:space-between; */
 }
