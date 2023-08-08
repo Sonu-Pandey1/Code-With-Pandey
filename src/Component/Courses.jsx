@@ -1,13 +1,26 @@
-// import React from 'react'
+
 
 import { useState } from "react"
-
-// import CourseCard from "./CourseCard"
-
-// import { useEffect } from "react"
+import { useNavigate } from "react-router-dom";
+import Footer from "../Footer";
 
 export default function Courses() {
-  const [visiable,setvisiable]= useState(9);
+  
+  let handlePrevious =()=>{
+    console.log("previous clicked >>>>>>",visiable)
+    setvisiable(visiable-9)
+
+
+    
+  }
+  let handleNext =()=>{
+    console.log("next clicked >>>>>>",visiable)
+    setvisiable(visiable+9)
+    
+  }
+  const navigate = useNavigate()
+  const [visiable, setvisiable] = useState(9);
+  console.log(visiable)
   let data = [
     {
       "id": 1,
@@ -202,27 +215,40 @@ export default function Courses() {
       "imgUrl": "https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcodewithharry.nyc3.cdn.digitaloceanspaces.com%2Fassets%2F0c9fbb82efe5437883daf3e96ab77e10.png&w=384&q=75"
     }
   ]
-
+console.log(data.length)
 
   return (
     <>
-      {data.slice(0,visiable).map((items) => {
-        return (<div className="cardWrapper" key={items.id}>
-          <div className="cardContainer">
-          <div className="card" style={{width: "18rem"}}>
-            <img src={items.imgUrl} className="card-img-top" alt="error" />
-            <div className="card-body">
-              <h5 className="card-title">{items.title}</h5>
-              <p className="card-text">{items.description}</p>
-              <a href="#" className="btn btn-primary">Start Watching</a>
+      <div className="section2">
+        <div className="containtparent">
+          <h4 className="containt"> All Courses</h4>
+          <h1>Premium Courses</h1>
+        </div>
+      </div>
+      {/* <h1 className="mt-4 text-center">Premium Courses</h1> */}
+      <div className="d-flex flex-wrap justify-content-evenly m-4">
+        {data.slice(0, visiable).map((items) => {
+          return (<div className="cardWrapper" key={items.id}>
+            <div className="cardContainer ">
+              <div className="card mb-5 shadow " style={{ width: "24rem" }}>
+                <img src={items.imgUrl} className="card-img-top img-fluid img-thumbnail rounded-4" alt="error" />
+                <div className="card-body">
+                  <h5 className="card-title">{items.title}</h5>
+                  <p className="card-text parag mt-3">{items.description}</p>
+                  <button className="bg-color-700 mx-3 btn cardBtn" onClick={() => navigate("/tutorial")} >Start Watching</button>
+                </div>
+              </div>
             </div>
           </div>
-          </div>
-        </div>
-
-        )
-      })}
-
+          )
+        })}
+      </div>
+      <div className="btnContainer d-flex justify-content-between mx-5 ">
+        <button disabled={visiable<=9 } className="btn btn-success " onClick={handlePrevious}>Previous</button>
+        <button disabled={visiable>=data.length} className="btn btn-success" onClick={handleNext}>Next</button>
+      </div>
+      
+      <Footer/>
     </>
   )
 

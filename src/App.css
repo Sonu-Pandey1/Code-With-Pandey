@@ -333,3 +333,19 @@ font-weight: 400;
 }
 
 /* courses page */
+.cardWrapper{
+  /* background-color: red; */
+  /* padding: 4rem; */
+}
+.parag{
+ 
+  height: 150px;
+  width:100%
+  
+}
+.btnContainer button{
+  background-color: #6B21A8 !important;
+}
+
+/* tutorial page */
+

@@ -4,6 +4,7 @@ import Typed from "react-typed"
 import CourseCard from "./CourseCard"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Footer from "../Footer";
 
 export default function Home() {
   const responsive = {
@@ -77,9 +78,9 @@ export default function Home() {
       <section className="section2">
         {/* <h2 className="text-center mt-3 ">Recommended Courses</h2> */}
         <div className="containtparent">
-                    <h4 className="containt"> Free Courses</h4>
-                    <h1>Recommended Courses</h1>
-                </div>
+          <h4 className="containt"> Free Courses</h4>
+          <h1>Recommended Courses</h1>
+        </div>
         <div className="courseCards">
           <div className="cardsWrapper mx-5 px-4 my-5">
             <div className="cardWrapper d-flex justify-content-between">
@@ -99,9 +100,9 @@ export default function Home() {
       <section className="section2">
         {/* <h1>Testimonials</h1> */}
         <div className="containtparent">
-                    <h4 className="containt">Testimonials</h4>
-                    <h1>Our Students Say!</h1>
-                </div>
+          <h4 className="containt">Testimonials</h4>
+          <h1>Our Students Say!</h1>
+        </div>
         <div className="container">
           <Carousel className="testimonials mt-5" removeArrowOnDeviceType={["tablet", "mobile"]} arrows={false} focusOnSelect={true} autoPlay={true} swipeable={true} draggable={true} autoPlaySpeed={3000} infinite={true} showDots={false} responsive={responsive}>
 
@@ -123,22 +124,8 @@ export default function Home() {
             <div><CourseCard title={"Ruhani Singh"} about={"Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sint Labore Cupiditate Dolore Expedita, Esse Ipsam Molestias Laboriosam Nam? Velit, Animi."} style={true} imgUrl={"https://img.freepik.com/free-photo/close-up-stylish-attractive-girl-with-hairbun-smiling-looking-hopeful_176420-25550.jpg?size=626&ext=jpg"} /></div>
           </Carousel>
         </div>
-
       </section>
-      <section className="sectionFooter">
-        <div className="copyright">
-          <div className="innerparentdiv">
-            <p>© <a href="#"> CodeWithPandey </a>, All Right Reserved. Designed By <a href="#"> Sonu
-              Pandey</a></p>
-            <ul className="innerparentdivul">
-              <li>Home</li>
-              <li>Cookies</li>
-              <li>Help</li>
-              <li>FAQs</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </div>
   )
 }
