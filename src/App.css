@@ -370,3 +370,54 @@ font-weight: 400;
 
 /* blog page */
 
+.blogH1{
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+
+/* notes paage */
+
+.NotesH1{
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #6B21A8;
+}
+.notesPara{
+  margin-top: -20px;
+}
+.borderr{
+  border: 1px solid rgba(128, 128, 128, 0.254);
+}
+
+/* contact page */
+
+.contactWrapper{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  /* padding: 100px 50px 0px 50px; */
+  height: 60vh;
+  width: 100%;
+  background-color:#F3F4F6;
+  
+}
+.contactImg{
+ 
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.contactIcons{
+  /* margin-left: 30rem;
+  margin-right: 30rem; */
+  
+}
+.icon{
+  font-size: 2rem;
+  margin: 30px;
+}
+.icon:hover{
+  cursor: pointer;
+  color:#6B21A8;
+}

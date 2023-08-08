@@ -9,14 +9,10 @@ export default function Courses() {
   let handlePrevious =()=>{
     console.log("previous clicked >>>>>>",visiable)
     setvisiable(visiable-9)
-
-
-    
   }
   let handleNext =()=>{
     console.log("next clicked >>>>>>",visiable)
     setvisiable(visiable+9)
-    
   }
   const navigate = useNavigate()
   const [visiable, setvisiable] = useState(9);
