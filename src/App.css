@@ -155,6 +155,7 @@ font-weight: 400;
 .cardBtn{
   border-radius: 20px;
   /* margin-top: -50px; */
+  
  
 }
 .cardBtn:hover{
@@ -290,7 +291,7 @@ font-weight: 400;
   width: 4%;
   height: 2px;
   top: 6px;
-  left: 555px;
+  left: 40vw;
   margin-top: 0px;
   background-color:#6B21A8;
   z-index: 1;
@@ -302,7 +303,7 @@ font-weight: 400;
   width: 6%;
   height: 2px;
   top: 15px;
-  left: 528px;
+  left: 38vw;
   margin-top: 0px;
   background-color:#6B21A8;
   z-index: 1;
@@ -314,7 +315,7 @@ font-weight: 400;
   width: 4%;
   height: 2px;
   top: 6px;
-  left: 743px;
+  left: 54vw;
   margin-top: 0px;
   background-color:#6B21A8;
   z-index: 1;
@@ -326,7 +327,7 @@ font-weight: 400;
   width: 6%;
   height: 2px;
   top: 15px;
-  left: 743px;
+  left: 54vw;
   margin-top: 0px;
   background-color:#6B21A8;
   z-index: 1;
@@ -348,4 +349,24 @@ font-weight: 400;
 }
 
 /* tutorial page */
+
+.nablinkinsidebtn{
+  color: black;
+  text-decoration: none;
+}
+/* tutorial card */
+.tutorialCardImg{
+  /* background-color: red; */
+  height: 100px;
+  width: auto;
+  object-fit:contain;
+
+}
+.tutorialinsidbtn{
+  /* border: none; */
+  /* background-color: unset; */
+  /* outline: none; */
+}
+
+/* blog page */
 

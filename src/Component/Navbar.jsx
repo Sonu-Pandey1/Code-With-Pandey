@@ -72,7 +72,7 @@ export default function Navbar() {
                                 <NavLink className="nav-link font-color-700" to="/tutorial/html-home" >HTML</NavLink>
                             </li>
                             <li className="nav-item mx-2">
-                                <NavLink className="nav-link font-color-700" to="/tutorial/css ">CSS</NavLink>
+                                <NavLink className="nav-link font-color-700" to="tutorial/css ">CSS</NavLink>
                             </li>
                             <li className="nav-item mx-2">
                                 <NavLink className="nav-link font-color-700" to="/tutorial/js">JS</NavLink>
