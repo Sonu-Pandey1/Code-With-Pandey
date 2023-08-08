@@ -50,9 +50,11 @@
 .homeicon{
   border: none;
   color: #6B21A8;
+  background-color: white;
 }
 .homeicon .homeiconmain{
   color: #6B21A8;
+  
 }
 .navContainer{
   position:sticky;
@@ -134,14 +136,25 @@ font-weight: 400;
 }
 
 /* card */
+.card{
+  border: none;
+  /* text-align: center; */
+}
+
+
 .cardh6{
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: -10px;
+  margin-top: -15px;
+  
+  /* object-fit: contain;
+   */
 }
 .cardBtn{
   border-radius: 20px;
+  /* margin-top: -50px; */
  
 }
 .cardBtn:hover{
@@ -149,12 +162,174 @@ font-weight: 400;
   color: white;
 
 }
+.style1{
+  width: 24rem;
+  overflow: hidden;
+}
+.style2{
+  width: 22rem;
+  /* background-color:yellow; */
+}
 
 
 /* section 2 */
+.section2{
+  width: 100%;
+  height: auto;
+  /* background-color: yellow; */
+  margin-bottom: 50px;
+}
 
-.section2 h1{
+
+/* section 3 */
+
+.section3 h1{
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.875rem;
+
+}
+.testimonials{
+  /* background-color: violet; */
+  cursor: pointer;
+
+
+}
+.testomonialImgs{
+  height: 100px;
+  width: 100px;
+  border-radius: 150px;
+  
+}
+/* .testomonialh5margintop{
+  margin-top: -15px;
+  font-size: 95px;
+  font-weight: 630;
+} */
+
+/* footer */
+.section9::before {
+  position: absolute;
+  content: "ram";
+  width: 4%;
+  height: 2px;
+  top: 3px;
+  left: 555px;
+  margin-top: 0px;
+  background-color: #06bbcc;
+  z-index: 1;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+.innerparentdiv {
+  margin-top: 30px;
+  width: 90%;
+  height: auto;
+  color: #6B21A8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  border-top: 1px solid #6B21A8 ;
+  /* color: #ffffff; */
+}
+
+.innerparentdivul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10px;
+}
+.innerparentdivul li {
+  padding-right: 25px;
+
+  list-style: none;
+  font-size: 15px;
+}
+.innerparentdiv p {
+  font-size: 15px;
+}
+
+.innerparentdiv a {
+  text-decoration: underline;
+  padding-top: 10px;
+  color:#6B21A8;
+}
+.innerparentdiv p::before {
+  content:'' ;
+}
+.sectionFooter{
+  /* background-color:#6b21a8d8; */
+
+  margin-top: 50px;
+}
+
+/* before and after */
+
+.containtparent {
+  position: relative;
+}
+.section2 .containtparent > h4 {
+  text-align: center;
+  margin-top: 30px;
+  color:#6B21A8;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.section2 .containtparent > h1 {
+  text-align: center;
   font-weight: 500;
   font-size: 1.875rem;
 }
+/* first */
+.containt::before {
+  position: absolute;
+  content: "";
+  width: 4%;
+  height: 2px;
+  top: 6px;
+  left: 555px;
+  margin-top: 0px;
+  background-color:#6B21A8;
+  z-index: 1;
+}
+/* second */
+.containtparent::before {
+  position: absolute;
+  content: "";
+  width: 6%;
+  height: 2px;
+  top: 15px;
+  left: 528px;
+  margin-top: 0px;
+  background-color:#6B21A8;
+  z-index: 1;
+}
+/* first */
+.containt::after {
+  position: absolute;
+  content: "";
+  width: 4%;
+  height: 2px;
+  top: 6px;
+  left: 743px;
+  margin-top: 0px;
+  background-color:#6B21A8;
+  z-index: 1;
+}
+/* second */
+.containtparent::after {
+  position: absolute;
+  content: "";
+  width: 6%;
+  height: 2px;
+  top: 15px;
+  left: 743px;
+  margin-top: 0px;
+  background-color:#6B21A8;
+  z-index: 1;
+}
 
+/* courses page */

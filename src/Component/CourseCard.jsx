@@ -1,17 +1,19 @@
-/* eslint-disable react/prop-types */
+import { NavLink, useNavigate } from "react-router-dom"
 
-
-export default function CourseCard({imgUrl,title,about}) {
+export default function CourseCard({imgUrl,title,about,style}) {
+    const navigate = useNavigate()
     return (
         <>
-            <div className="card mb-4" style={{width: "24rem"}}>
-                <img src={imgUrl} className="card-img-top bg-danger" alt="..." />
+            <div className={`card m-auto mb-4 shadow style${style===true?"2":"1"}`}  >
+                {style===true?<img src={imgUrl} className="card-img-top img-fluid img-thumbnail testomonialImgs m-auto" alt="error" />:<img src={imgUrl} className="card-img-top img-fluid img-thumbnail rounded-4" alt="error" />}
                 <div className="card-body">
-                    <h6 className="cardh6 p-2">FREE COURSE</h6>
-                    <h5 className="card-title p-2 ">{title}</h5>
-                    <p className="card-text p-2 mb-5  ">{about}</p>
+                    {style===true?"":<h6 className="cardh6 p-2">FREE COURSE</h6>}
+                    <h5 className={`card-title testomonialh5margintop p-2 text-${style===true?"center":""}`}>{title}</h5>
+                    {style===true?<h6 className="cardh6 p-2 text-center mb-2">Student</h6>:""}
+                    <p className={`card-text p-2 text-${style===true?"center":""}`}>{about}</p>
                     <div className="btncontainer">
-                    <a href="#" className="btn bg-color-700 mx-3 cardBtn ">Start Watching</a>
+                    {style===true?"":<button className="bg-color-700 mx-3 btn cardBtn" onClick={()=>navigate("/tutorial")} >Start Watching</button>}
+                    
                     </div>
                 </div>
             </div>
