@@ -11,6 +11,8 @@ import Contact from "./Component/Contact"
 import WorkWithUs from "./Component/WorkWithUs"
 import Html_home from "./Component/Html_home"
 import Page404 from './Component/Page404'
+import Login from './Component/Login'
+import Signup from './Component/Signup'
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
         <Route path='/notes' element={<Notes />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/workwithus' element={<WorkWithUs />} />
-        <Route path='/workwithus' element={<WorkWithUs />} />
-        <Route path='/workwithus' element={<WorkWithUs />} />
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
         <Route path='/*' element={<Page404/>} />
       </Routes>
     </>

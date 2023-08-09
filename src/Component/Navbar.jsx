@@ -45,8 +45,8 @@ export default function Navbar() {
                             </li>
                             <li className=" d-flex justify-content-evenly navbarbtnli">
                                 <button className="px-1  mx-2 darkmodeIcon "><BsFillMoonStarsFill className="libtnmoon" /></button>
-                                <button className="navbarbtn mx-2 btn ">Login</button>
-                                <button className="navbarbtn btn ">SignUp</button>
+                                <button onClick={()=>{navigate("/login")}} className="navbarbtn px-3 mx-2 ">Login</button>
+                                <button onClick={()=>{navigate("/signup")}} className=" px-3 navbarbtn   ">SignUp</button>
                             </li>
                         </ul>
 
