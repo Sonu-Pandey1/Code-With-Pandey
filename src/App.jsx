@@ -26,6 +26,8 @@ function App() {
         <Route path='/notes' element={<Notes />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/workwithus' element={<WorkWithUs />} />
+        <Route path='/workwithus' element={<WorkWithUs />} />
+        <Route path='/workwithus' element={<WorkWithUs />} />
         <Route path='/*' element={<Page404/>} />
       </Routes>
     </>
