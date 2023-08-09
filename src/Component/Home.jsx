@@ -5,8 +5,10 @@ import CourseCard from "./CourseCard"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Footer from "../Footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate()
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -61,8 +63,8 @@ export default function Home() {
             </div>
             <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
             <div className="heroSectionBtns mt-4">
-              <button className="btn btn-dark ">Free Courses</button>
-              <button className="btn btn-light ms-3 border-secondary-subtle ">Explore Blog</button>
+              <button onClick={()=>{navigate("/courses")}} className="btn btn-dark " >Free Courses</button>
+              <button  onClick={()=>{navigate("/blog")}} className="btn btn-light ms-3 border-secondary-subtle  ">Explore Blog</button>
             </div>
           </div>
           <div className="col col-6 heroSectionRightDiv">

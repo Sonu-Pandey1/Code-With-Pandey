@@ -11,7 +11,7 @@ export default function TutorialsCard({imgUrl,title,nav,des,notes}) {
                 <div className="card-body text-center">
                     <h5 className="card-title mb-4">{title}</h5>
                     {notes===true?<p className="notesPara">{des}</p>:""}
-                    {notes===true?<button className="bg-color-700 aligncenter tutorialinsidbtn  btn cardBtn mb-2" ><Pdf/></button>:<button className="bg-color-700 aligncenter tutorialinsidbtn  btn cardBtn mb-2" >Start Learning!</button>}
+                    {notes===true?<button className="bg-color-700 aligncenter tutorialinsidbtn  btn cardBtn mb-2" ><Pdf/></button>:<button className="bg-color-700 aligncenter tutorialinsidbtn  btn cardBtn mb-2" >{nav}</button>}
                     {notes===true?<button className="bg-color-700 aligncenter tutorialinsidbtn  btn cardBtn" >Chapterwise Notes</button>:""}
                     {/* <button className="bg-color-700 aligncenter  btn cardBtn" onClick={()=>navigate(`/tutorial/${nav}`)}>{nav}</button> */}
                 </div>

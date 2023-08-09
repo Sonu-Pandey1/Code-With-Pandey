@@ -41,9 +41,6 @@ export default function Navbar() {
                                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/mygear">My Gear</NavLink>
-                            </li>
-                            <li className="nav-item">
                                 <NavLink className="nav-link" to="/workwithus">Contact With Us</NavLink>
                             </li>
                             <li className=" d-flex justify-content-evenly navbarbtnli">

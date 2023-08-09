@@ -423,8 +423,48 @@ font-weight: 400;
 }
 
 /* work with us */
+.radiobtnContainer{
+  /* background-color: red; */
+ margin: 0px;
+ padding: 0px;
+  /* display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */ 
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+}
+.skillsContainer{
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+
+  
+}
+ul li{
+  list-style: none;
+  /* float: right; */
+  display: flex;
+}
+.radiobtnContainer{
+  display: flex;
+  margin-top: 10px;
+  
+}
+.radiobtnContainer .dd{
+  /* background-color: aqua; */
+  /* height: 2  8px; */
+  /* color: yellow; */
+  border-radius: 100%;
+  list-style: none;
+  /* float: right; */
+ margin-left: -10px;
+ /* padding: 10px; */
+
+}
+
 .formContainerWorkWithUs{
-  background-color: #005ce6;
+  /* background-color: #005ce6; */
 }
 
 .cpntainerrrrr {
@@ -470,7 +510,8 @@ form .head p {
 
 form .inputs {
   overflow: hidden;
-  background-color: #F1F7FE;
+  /* background-color: #F1F7FE; */
+  /* background-color: #06bbcc; */
   width: 100%;
   margin: 1rem 0.5rem;
   border-radius: 8px;
@@ -482,15 +523,15 @@ form .inputs input {
   border: none;
   outline: none;
   padding: 8px 15px;
-    /* علشان اقدر اخلي البلاس هولدر من اول الفورم بديله نفس الويدس */
   width: 100%;
   height: 40px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.299);
   font-weight: 200;
+  border-radius: 6px;
 }
 
 form button {
-  background-color: #4287ef;
+  background-color:#6B21A8;
   color: white;
   width: 100%;
   height: 40px;
@@ -509,19 +550,12 @@ form button:hover {
   background-color: #005ce6;
 }
 
-.form-footer {
-  background-color: #e0ecfb;
-  padding: 16px;
-  font-size: 1rem;
-  text-align: center;
-}
 
-.form-footer a {
-  font-weight: bolder;
-  color: #0066ff;
-  transition: all 3s ease-in-out;
-}
+/* 404 page */
 
-.form-footer a:hover {
-  color: #005ce6;
+.Page404maindiv{
+  /* background-image: url("Page404maindiv"); */
+  /* height: 100%;
+  width: 100%; */
+  background-color: red;
 }
