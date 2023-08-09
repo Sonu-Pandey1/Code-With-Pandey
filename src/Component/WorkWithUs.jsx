@@ -3,78 +3,79 @@
 export default function WorkWithUs() {
   return (
     <div>
-      <div className="container">
-        <div className="row mt-5">
-          <div className="col">
+      <div className="container mt-5">
+        <div className="row align-bottom">
+          <div className="col-lg-6 item text-lg-center">
             <h1>We are hiring!</h1>
             <p>We are looking for freelance Developers, Subtitle writers, Content writers and Video editors. If you think you are fit for the role. Submit the form. Make sure you have a valid email so we can contact you back in case your application gets selected. Cheers!</p>
           </div>
-          <div className="col">
-            <div className="formContainer">
-              <form className="row g-3 needs-validation" noValidate>
-                <div className="col-md-4">
-                  <label htmlFor="validationCustom01" className="form-label">First name</label>
-                  <input type="text" className="form-control" id="validationCustom01" value="Mark" required />
-                  <div className="valid-feedback">
-                    Looks good!
-                  </div>
+          <div className="col-lg-6">
+            <div className="formContainerWorkWithUs">
+              {/* <form>
+                <p>India Only</p>
+                <h1>Apply Now!</h1>
+                <label htmlFor="name">Full Name</label><br />
+                <input type="text" placeholder="Enter Your Name " name="name" id="name" /><br />
+                <label htmlFor="email">Email</label><br />
+                <input type="email" placeholder="Enter Your Email" name="email" id="email" /><br />
+                <label htmlFor="number">Phone Number</label><br />
+                <input type="tel" placeholder="Enter Your Number" name="number" id="number" /><br />
+                <label htmlFor="url">Link To Your Resume</label><br />
+                <input type="url" placeholder="Enter Your Link" name="url" id="url" /><br />
+                <label htmlFor="skill">Skill : </label><br />
+                <div className="radiobtnContainer">
+                  <input type="radio"/> Subtitle Writer
+                  <input type="radio"/> Python Dev <br />
+                  <input type="radio"/> Content Writer 
+                  <input type="radio"/> PHP Dev <br />
+                  <input type="radio"/> Video Editor 
+                  <input type="radio"/> Javascript Dev <br />
+                  <input type="radio"/> Mern Dev 
+                  <input type="radio"/> Java Dev <br />
                 </div>
-                <div className="col-md-4">
-                  <label htmlFor="validationCustom02" className="form-label">Last name</label>
-                  <input type="text" className="form-control" id="validationCustom02" value="Otto" required />
-                  <div className="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <label htmlFor="validationCustomUsername" className="form-label">Username</label>
-                  <div className="input-group has-validation">
-                    <span className="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" className="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
-                    <div className="invalid-feedback">
-                      Please choose a username.
+                <p>We will be in touch soon!</p>
+
+              </form> */}
+
+              <div className="body">
+                <div className="container cpntainerrrrr">
+                  <form className="formm">
+                    <div className="head">
+                      <p className=" text-center">India Only </p>
+                      <span className=" text-center">Apply Now!</span>
+
                     </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <label htmlFor="validationCustom03" className="form-label">City</label>
-                  <input type="text" className="form-control" id="validationCustom03" required />
-                  <div className="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <label for="validationCustom04" className="form-label">State</label>
-                  <select className="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div className="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <label for="validationCustom05" className="form-label">Zip</label>
-                  <input type="text" className="form-control" id="validationCustom05" required />
-                  <div className="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div className="col-12">
-                  <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-                    <label className="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div className="invalid-feedback">
-                      You must agree before submitting.
+                    <div className="inputs">
+                      <label htmlFor="name">Full Name</label><br />
+                      <input type="text" placeholder="Enter Your Name " name="name" id="name" /><br />
+                      <label htmlFor="email">Email</label><br />
+                      <input type="email" placeholder="Enter Your Email" name="email" id="email" /><br />
+                      <label htmlFor="number">Phone Number</label><br />
+                      <input type="tel" placeholder="Enter Your Number" name="number" id="number" /><br />
+                      <label htmlFor="url">Link To Your Resume</label><br />
+                      <input type="url" placeholder="Enter Your Link" name="url" id="url" /><br />
+                      <label htmlFor="skill">Skill : </label><br />
+                      <div className="radiobtnContainer">
+                        <input type="radio" /> Subtitle Writer
+                        <input type="radio" /> Python Dev <br />
+                        <input type="radio" /> Content Writer
+                        <input type="radio" /> PHP Dev <br />
+                        <input type="radio" /> Video Editor
+                        <input type="radio" /> Javascript Dev <br />
+                        <input type="radio" /> Mern Dev
+                        <input type="radio" /> Java Dev <br />
+                      </div>
+                      <p>We will be in touch soon!</p>
                     </div>
-                  </div>
+                    <button>Submit</button>
+                  </form>
+
+
                 </div>
-                <div className="col-12">
-                  <button className="btn btn-primary" type="submit">Submit form</button>
-                </div>
-              </form>
+
+              </div>
+
+
             </div>
           </div>
         </div>
