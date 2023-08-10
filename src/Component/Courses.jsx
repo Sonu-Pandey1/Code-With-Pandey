@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer";
 
-export default function Courses() {
+export default function Courses({mode}) {
   
   let handlePrevious =()=>{
     console.log("previous clicked >>>>>>",visiable)
@@ -244,7 +244,7 @@ console.log(data.length)
         <button disabled={visiable>=data.length} className="btn btn-success" onClick={handleNext}>Next</button>
       </div>
       
-      <Footer/>
+      <Footer mode={mode}/>
     </>
   )
 

@@ -1,5 +1,5 @@
 import Footer from "../Footer"
-export default function Signup(){
+export default function Signup({mode}){
     return(
         <>
             <div className="">
@@ -41,7 +41,7 @@ export default function Signup(){
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer mode={mode} />
         </div>
         </>
     )

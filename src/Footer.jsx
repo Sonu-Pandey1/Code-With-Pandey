@@ -1,11 +1,11 @@
 
 
-export default function Footer() {
+export default function Footer({mode}) {
     return (
         <>
-            <section className="sectionFooter">
+            <section className="sectionFooter ">
                 <div className="copyright">
-                    <div className="innerparentdiv">
+                    <div className={`innerparentdiv${mode===true?"1":""}`}>
                         <p>© <a href="#"> CodeWithPandey </a>, All Right Reserved. Designed By <a href="#"> Sonu
                             Pandey</a></p>
                         <ul className="innerparentdivul">

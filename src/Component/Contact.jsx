@@ -3,7 +3,7 @@ import {BsFacebook,BsGithub,BsTwitter,BsInstagram  } from "react-icons/Bs"
 
 import Footer from "../Footer";
 
-export default function Contact() {
+export default function Contact({mode}) {
   return (
     <div>
       <div className="contactWrapper  ">
@@ -21,7 +21,7 @@ export default function Contact() {
       </div>
       </div>
       
-      <Footer/>
+      <Footer mode={mode}/>
       
     </div>
   )

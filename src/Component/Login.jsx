@@ -1,7 +1,7 @@
 import Footer from "../Footer"
 // import React from 'react'
 
-export default function Login() {
+export default function Login({mode}) {
     return (
         <div className="">
             <div className="container d-flex justify-content-between">
@@ -35,7 +35,7 @@ export default function Login() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer mode={mode}/>
         </div>
     )
 }

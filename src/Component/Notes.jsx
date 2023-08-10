@@ -4,7 +4,7 @@
 import TutorialsCard from "./TutorialsCard";
 import Footer from "../Footer";
 
-export default function Notes() {
+export default function Notes({mode}) {
   return (
     <div>
       <h1 className="NotesH1 mt-5 mb-4 ">Download Notes by CodeWithPandey</h1>
@@ -25,7 +25,7 @@ export default function Notes() {
 
       <TutorialsCard des={"Download Notes Here"} notes={true} title={"Android Notes"} imgUrl={"https://www.codewithharry.com/img/notes/android.webp"}/>
       </div>
-      <Footer/>
+      <Footer mode={mode}/>
     </div>
   )
 }

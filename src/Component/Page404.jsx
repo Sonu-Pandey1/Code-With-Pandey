@@ -3,7 +3,7 @@ import Footer from "../Footer"
 import "../App.css"
 import { NavLink } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
-export default function Page404() {
+export default function Page404({mode}) {
   const navigate = useNavigate()
   return (
     <>
@@ -20,7 +20,7 @@ export default function Page404() {
 
 
       </div>
-      <Footer />
+      <Footer mode={mode} />
     </>
   )
 }

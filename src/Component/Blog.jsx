@@ -1,7 +1,7 @@
 // import React from 'react'
 import { useState } from "react";
 import Footer from "../Footer";
-export default function Blog() {
+export default function Blog({mode}) {
   const [visiable, setvisiable] = useState(9);
   let handlePrevious =()=>{
     console.log("previous clicked >>>>>>",visiable)
@@ -228,7 +228,7 @@ export default function Blog() {
         <button disabled={visiable <= 9} className="btn btn-success " onClick={handlePrevious}>Previous</button>
         <button disabled={visiable >= data.length} className="btn btn-success" onClick={handleNext}>Next</button>
       </div>
-      <Footer/>
+      <Footer mode={mode}/>
     </div>
   )
 }

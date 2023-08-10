@@ -1,5 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom'
+import { useState } from 'react'
 import './App.css'
 import Navbar from './Component/Navbar'
 import Home from "./Component/Home"
@@ -15,22 +16,36 @@ import Login from './Component/Login'
 import Signup from './Component/Signup'
 
 function App() {
+
+  const [mode, setMode]=useState(false)
+    console.log(mode)
+    let modeHandller=()=>{
+        setMode(!mode);
+        if(mode===true){
+          document.body.style.backgroundColor="#ffffff"
+        }
+        else{
+          document.body.style.backgroundColor="#111827"
+        }
+        
+    }
+
   return (
     <>
-      <Navbar />
+      <Navbar mode={mode} modeHandller={modeHandller} />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/courses' element={<Courses />} />
-        <Route path='/tutorial/' element={<Tutorial />}>
+        <Route path='/' element={<Home mode={mode} />} />
+        <Route path='/courses' element={<Courses mode={mode} />} />
+        <Route path='/tutorial/' element={<Tutorial mode={mode} />}>
         </Route>
-        <Route path='/tutorial/:name' element={<Html_home />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/notes' element={<Notes />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/workwithus' element={<WorkWithUs />} />
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/signup' element={<Signup/>}/>
-        <Route path='/*' element={<Page404/>} />
+        <Route path='/tutorial/:name' element={<Html_home mode={mode} />} />
+        <Route path='/blog' element={<Blog mode={mode} />} />
+        <Route path='/notes' element={<Notes mode={mode} />} />
+        <Route path='/contact' element={<Contact mode={mode} />} />
+        <Route path='/workwithus' element={<WorkWithUs mode={mode} />} />
+        <Route path='/login' element={<Login mode={mode}/>}/>
+        <Route path='/signup' element={<Signup mode={mode}/>}/>
+        <Route path='/*' element={<Page404 mode={mode}/>} />
       </Routes>
     </>
   )

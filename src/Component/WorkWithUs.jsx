@@ -1,7 +1,7 @@
 // import React from 'react'
 import Footer from "../Footer"
 
-export default function WorkWithUs() {
+export default function WorkWithUs({mode}) {
   return (
     <div>
       <div className="container mt-5">
@@ -57,7 +57,7 @@ export default function WorkWithUs() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer mode={mode}/>
     </div>
   )
 }

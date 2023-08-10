@@ -4,7 +4,7 @@ import Footer from "../Footer";
 import TutorialsCard from "./TutorialsCard";
 // import Html_home from "./Html_home";
 
-export default function Tutorial() {
+export default function Tutorial({mode}) {
   // const navigate  = useNavigate()
 
   return (
@@ -50,7 +50,7 @@ export default function Tutorial() {
         {/* <Outlet /> */}
 
       </div>
-      <Footer />
+      <Footer mode={mode} />
     </>
   )
 }
