@@ -457,6 +457,7 @@ font-weight: 400;
 }
 .borderr{
   border: 1px solid rgba(128, 128, 128, 0.254);
+  /* border-radius: 30px; */
 }
 
 /* contact page */
@@ -467,8 +468,13 @@ font-weight: 400;
   /* padding: 100px 50px 0px 50px; */
   height: 60vh;
   width: 100%;
-  background-color:#F3F4F6;
+  /* background-color:#F3F4F6; */
   
+}
+.contactbgcolor{
+  background-color:#F3F4F6;
+ border-radius: 90px;
+
 }
 .contactImg{
  
@@ -481,13 +487,25 @@ font-weight: 400;
   margin-right: 30rem; */
   
 }
-.icon{
+.iconn{
   font-size: 2rem;
   margin: 30px;
+  
 }
-.icon:hover{
+.iconn2{
+  font-size: 2rem;
+  margin: 30px;
+  color: white;
+  cursor: pointer;
+}
+.iconn:hover{
   cursor: pointer;
   color:#6B21A8;
+}
+.iconn2:hover{
+  /* cursor: pointer; */
+  /* color:#6B21A8; */
+  color: rgb(192 132 252);
 }
 
 /* work with us */
@@ -537,7 +555,7 @@ ul li{
 
 .cpntainerrrrr {
   max-width: 380px;
-  background-color: #F1F7FE;
+  /* background-color: #F1F7FE; */
   border-radius: 15px;
   overflow: hidden;
 }

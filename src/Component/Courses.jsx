@@ -218,7 +218,7 @@ console.log(data.length)
       <div className="section2">
         <div className="containtparent">
           <h4 className="containt"> All Courses</h4>
-          <h1>Premium Courses</h1>
+          <h1 className={`text-${mode===true?"light":""}`}>Premium Courses</h1>
         </div>
       </div>
       {/* <h1 className="mt-4 text-center">Premium Courses</h1> */}
@@ -226,11 +226,11 @@ console.log(data.length)
         {data.slice(0, visiable).map((items) => {
           return (<div className="cardWrapper" key={items.id}>
             <div className="cardContainer ">
-              <div className="card mb-5 shadow " style={{ width: "24rem" }}>
+              <div className={`card mb-5 shadow ${mode===true?"courseCardswhite":""}`} style={{ width: "24rem" }}>
                 <img src={items.imgUrl} className="card-img-top img-fluid img-thumbnail rounded-4" alt="error" />
                 <div className="card-body">
-                  <h5 className="card-title">{items.title}</h5>
-                  <p className="card-text parag mt-3">{items.description}</p>
+                  <h5 className={`card-title text-${mode===true?"light":""} `}>{items.title}</h5>
+                  <p className={`card-text parag mt-3 ${mode===true?"courseCardswhitenot":""} `}>{items.description}</p>
                   <button className="bg-color-700 mx-3 btn cardBtn" onClick={() => navigate("/tutorial")} >Start Watching</button>
                 </div>
               </div>

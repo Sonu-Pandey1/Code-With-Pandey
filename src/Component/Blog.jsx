@@ -207,17 +207,17 @@ export default function Blog({mode}) {
   ]
   return (
     <div>
-      <h1 className="text-center mt-4  blogH1">Coding Articles</h1>
+      <h1 className={`text-center mt-4  blogH1 text-${mode===true?"light":""}`}>Coding Articles</h1>
       <div className="cardcontainerrrr d-flex flex-wrap justify-content-center p-5 mb-5">
         {data.slice(0,visiable).map((items) => {
           return <div key={items.id}>
-            <div className="card mb-5 shadow-lg" style={{ width: "50rem" }}>
-              <div className="card-header">
+            <div className={`card mb-5 ${mode===true?"courseCardswhite":""} shadow-lg`} style={{ width: "50rem" }}>
+              <div className={`card-header text-${mode===true?"light":""}`}>
                 {items.date}
               </div>
-              <div className="card-body">
-                <h5 className="card-title">{items.title}</h5>
-                <p className="card-text">{items.description}</p>
+              <div className="card-body ">
+                <h5 className={`card-title text-${mode===true?"light":""}`}>{items.title}</h5>
+                <p className={`card-text ${mode===true?"courseCardswhitenot":""}`}>{items.description}</p>
                 <button className="bg-color-700 cardBtn tutorialinsidbtn  btn " >Reed More</button>
               </div>
             </div>
