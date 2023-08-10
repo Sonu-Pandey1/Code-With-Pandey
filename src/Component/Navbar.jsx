@@ -11,9 +11,9 @@ export default function Navbar() {
         <div className="navContainer  shadow">
 
             {/* top Navbar here */}
-            <nav className="navbar navb  navbar-expand-lg  p-4">
+            <nav className="navbar navb  navbar-expand-lg  p-3">
                 <div className="container-fluid">
-                  
+
                     <NavLink className="navbar-brand font-color-700 title" to="/"><span>&lt;</span><span>&#8725;</span><span>&gt;</span>&nbsp;  CodeWithPandey</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -44,21 +44,25 @@ export default function Navbar() {
                                 <NavLink className="nav-link" to="/workwithus">Contact With Us</NavLink>
                             </li>
                             <li className=" d-flex justify-content-evenly navbarbtnli">
-                                <button className="px-1  mx-2 darkmodeIcon "><BsFillMoonStarsFill className="libtnmoon" /></button>
-                                <button onClick={()=>{navigate("/login")}} className="navbarbtn px-3 mx-2 ">Login</button>
-                                <button onClick={()=>{navigate("/signup")}} className=" px-3 navbarbtn   ">SignUp</button>
+                                <label className="switch">
+                                    <input type="checkbox" className="input__check"/>
+                                        <span className="slider"></span>
+                                </label>
+                                {/* <button className="px-1  mx-2 darkmodeIcon "><BsFillMoonStarsFill className="libtnmoon" /></button> */}
+                                <button onClick={() => { navigate("/login") }} className="navbarbtn px-3 mx-2 ">Login</button>
+                                <button onClick={() => { navigate("/signup") }} className=" px-3 navbarbtn   ">SignUp</button>
                             </li>
                         </ul>
 
                     </div>
                 </div>
             </nav>
-            
-                {/* bottom navbar here */}
+
+            {/* bottom navbar here */}
             <nav className="navbar    navbar-expand-lg mx-4  p-1">
                 <div className="container-fluid">
                     {/* <NavLink className="navbar-brand font-color-700 title " to="/"><ImHome /></NavLink> */}
-                    <button onClick={()=>navigate("/")} className="navbar-brand font-color-700 title homeicon"><ImHome className="homeiconmain" /></button>
+                    <button onClick={() => navigate("/")} className="navbar-brand font-color-700 title homeicon"><ImHome className="homeiconmain" /></button>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -93,10 +97,19 @@ export default function Navbar() {
                                 <NavLink className="nav-link font-color-700" to="/tutorial/react-js">REACT JS</NavLink>
                             </li>
                         </ul>
-                        <form className="d-flex" role="search">
+                        <div className="input-wrapper">
+                            <button className="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+                                    <path strokeLinejoin="round" strokeLinecap="round" strokeWidth="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+                                    <path strokeLinejoin="round" strokeLinecap="round" strokeWidth="1.5" stroke="#fff" d="M22 22L20 20"></path>
+                                </svg>
+                            </button>
+                            <input placeholder="search.." className="input" name="text" type="text" />
+                        </div>
+                        {/* <form className="d-flex" role="search">
                             <input className="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success searchbtn" type="submit">Search</button>
-                        </form>
+                        </form> */}
                     </div>
                 </div>
             </nav>
