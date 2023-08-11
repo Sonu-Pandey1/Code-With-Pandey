@@ -17,10 +17,10 @@ export default function Navbar({mode ,modeHandller}) {
             <nav className="navbar navb  navbar-expand-lg  p-3">
                 <div className="container-fluid">
 
-                    <NavLink className={`navbar-brand font-color-700 title ${mode===true?"premaryColor":"premaryColor2"} `} to="/"><span>&lt;</span><span>&#8725;</span><span>&gt;</span>&nbsp;  CodeWithPandey</NavLink>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <NavLink className={`navbar-brand font-color-700 title ${mode===true?"premaryColor2":"premaryColor"} `} to="/"><span>&lt;</span><span>&#8725;</span><span>&gt;</span>&nbsp;  CodeWithPandey</NavLink>
+                    {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav navul ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
@@ -69,7 +69,7 @@ export default function Navbar({mode ,modeHandller}) {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContentt">
                         <ul className="navbar-nav navul ms-auto me-auto mb-2  mb-lg-0">
                             <li className="nav-item mx-2 " >
                                 {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
@@ -107,7 +107,7 @@ export default function Navbar({mode ,modeHandller}) {
                                     <path strokeLinejoin="round" strokeLinecap="round" strokeWidth="1.5" stroke="#fff" d="M22 22L20 20"></path>
                                 </svg>
                             </button>
-                            <input placeholder="search.." className={`${mode===true?"input1":"input"}`} name="text" type="text" />
+                            <input placeholder="search.." className={`  ${mode===true?"input1":"input"}`} name="text" type="text" />
                         </div>
                         {/* <form className="d-flex" role="search">
                             <input className="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search" />

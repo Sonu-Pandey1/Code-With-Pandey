@@ -6,11 +6,11 @@ export default function WorkWithUs({mode}) {
     <div>
       <div className="container mt-5">
         <div className="row align-bottom">
-          <div className="col-lg-6 item text-lg-center">
-            <h1 className={`text-${mode===true?"light":""}`}>We are hiring!</h1>
-            <p className={`${mode===true?"courseCardswhitenot":""}`}>We are looking for freelance Developers, Subtitle writers, Content writers and Video editors. If you think you are fit for the role. Submit the form. Make sure you have a valid email so we can contact you back in case your application gets selected. Cheers!</p>
+          <div className="col-xxl-6 col-xl-6 col-lg-5 col-md-6 item text-lg-center">
+            <h1 className={`kachuna2 text-${mode===true?"light":""}`}>We are hiring!</h1>
+            <p className={` kachuna ${mode===true?"courseCardswhitenot":""} mb-md-0 mb-5`}>We are looking for freelance Developers, Subtitle writers, Content writers and Video editors. If you think you are fit for the role. Submit the form. Make sure you have a valid email so we can contact you back in case your application gets selected. Cheers!</p>
           </div>
-          <div className="col-lg-6">
+          <div className=" col-xxl-6 col-xl-6 col-lg-5 col-md-6 ">
             <div className="formContainerWorkWithUs">    
               <div className="body">
                 <div className={`container shadow ${mode===true?"courseCardswhite":""} cpntainerrrrr`}>

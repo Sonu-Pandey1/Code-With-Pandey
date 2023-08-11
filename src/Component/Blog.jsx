@@ -1,15 +1,15 @@
 // import React from 'react'
 import { useState } from "react";
 import Footer from "../Footer";
-export default function Blog({mode}) {
+export default function Blog({ mode }) {
   const [visiable, setvisiable] = useState(9);
-  let handlePrevious =()=>{
-    console.log("previous clicked >>>>>>",visiable)
-    setvisiable(visiable-9)
+  let handlePrevious = () => {
+    console.log("previous clicked >>>>>>", visiable)
+    setvisiable(visiable - 9)
   }
-  let handleNext =()=>{
-    console.log("next clicked >>>>>>",visiable)
-    setvisiable(visiable+9)
+  let handleNext = () => {
+    console.log("next clicked >>>>>>", visiable)
+    setvisiable(visiable + 9)
   }
   let data = [
     {
@@ -207,17 +207,17 @@ export default function Blog({mode}) {
   ]
   return (
     <div>
-      <h1 className={`text-center mt-4  blogH1 text-${mode===true?"light":""}`}>Coding Articles</h1>
+      <h1 className={`text-center mt-4  blogH1 text-${mode === true ? "light" : ""}`}>Coding Articles</h1>
       <div className="cardcontainerrrr d-flex flex-wrap justify-content-center p-5 mb-5">
-        {data.slice(0,visiable).map((items) => {
+        {data.slice(0, visiable).map((items) => {
           return <div key={items.id}>
-            <div className={`card mb-5 ${mode===true?"courseCardswhite":""} shadow-lg`} style={{ width: "50rem" }}>
-              <div className={`card-header text-${mode===true?"light":""}`}>
+            <div className={`card mb-5 ${mode === true ? "courseCardswhite" : ""} shadow-lg`} style={{ width: "80vw" }}>
+              <div className={`card-header text-${mode === true ? "light" : ""}`}>
                 {items.date}
               </div>
               <div className="card-body ">
-                <h5 className={`card-title text-${mode===true?"light":""}`}>{items.title}</h5>
-                <p className={`card-text ${mode===true?"courseCardswhitenot":""}`}>{items.description}</p>
+                <h5 className={`card-title text-${mode === true ? "light" : ""}`}>{items.title}</h5>
+                <p className={`card-text ${mode === true ? "courseCardswhitenot" : ""}`}>{items.description}</p>
                 <button className="bg-color-700 cardBtn tutorialinsidbtn  btn " >Reed More</button>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function Blog({mode}) {
         <button disabled={visiable <= 9} className="btn btn-success " onClick={handlePrevious}>Previous</button>
         <button disabled={visiable >= data.length} className="btn btn-success" onClick={handleNext}>Next</button>
       </div>
-      <Footer mode={mode}/>
+      <Footer mode={mode} />
     </div>
   )
 }

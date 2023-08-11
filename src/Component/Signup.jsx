@@ -5,13 +5,13 @@ export default function Signup({mode}){
             <div className="">
             <div className="container d-flex justify-content-between">
                 <div className="row">
-                    <div className="col col-6">
+                    <div className="col ram">
                         <img className="loginIconImage" src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-4468581-3783954.png" alt="" />
                     </div>
                 </div>
-                <div className="col col-6">
+                <div className="col ">
                     <div className="loginWrapper">
-                        <form action="" className="form_main">
+                        <form action="" className={`form_main ${mode===true?"courseCardswhite":""} `}>
                             <p className="heading">SignUp</p>
                             <div className="inputContainer">
                                 <svg className="inputIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e2e2e" viewBox="0 0 16 16">

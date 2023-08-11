@@ -222,7 +222,7 @@ console.log(data.length)
         </div>
       </div>
       {/* <h1 className="mt-4 text-center">Premium Courses</h1> */}
-      <div className="d-flex flex-wrap justify-content-evenly m-4">
+      <div className="d-flex  flex-wrap justify-content-evenly m-4">
         {data.slice(0, visiable).map((items) => {
           return (<div className="cardWrapper" key={items.id}>
             <div className="cardContainer ">
