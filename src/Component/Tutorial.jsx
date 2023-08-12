@@ -1,4 +1,8 @@
-// import React from 'react'
+// import React from 'react'\
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
+
 import { NavLink,  } from "react-router-dom";
 import Footer from "../Footer";
 import TutorialsCard from "./TutorialsCard";
@@ -6,17 +10,25 @@ import TutorialsCard from "./TutorialsCard";
 
 export default function Tutorial({mode}) {
   // const navigate  = useNavigate()
+  useEffect(()=>{
+     AOS.init({
+      duration:"1000",
+    //   delay:"100",
+      // offset:"1000"
+      
+     });
+  },[]);
 
   return (
     <>
       <div>
         <div className="section2">
-          <div className="containtparent">
+          <div className="containtparent" data-aos="fade-down">
             <h4 className="containt me-3">All Tutorials</h4>
             <h1 className={`text-${mode===true?"light":""}`}> Free Tutorials For You </h1>
           </div>
         </div>
-        <div className="cardholder d-flex flex-wrap justify-content-evenly">
+        <div data-aos="zoom-in-up" className="cardholder d-flex flex-wrap justify-content-evenly">
           <TutorialsCard mode3={mode} nav={<NavLink className={"nablinkinsidebtn"} to="python">Start Learning!</NavLink>} title={"Python Tutorial"} imgUrl={"https://www.codewithharry.com/img/notes/python.webp"} />
 
           <TutorialsCard mode3={mode} nav={<NavLink className={"nablinkinsidebtn"} to="c">Start Learning!</NavLink>} title={"C Tutorial"} imgUrl={"https://www.codewithharry.com/img/notes/c.webp"} />

@@ -1,10 +1,21 @@
 
-
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer";
 
 export default function Courses({mode}) {
+
+  useEffect(()=>{
+     AOS.init({
+      duration:"1000",
+    //   delay:"100",
+      // offset:"1000"
+      
+     });
+  },[]);
   
   let handlePrevious =()=>{
     console.log("previous clicked >>>>>>",visiable)
@@ -216,7 +227,7 @@ console.log(data.length)
   return (
     <>
       <div className="section2">
-        <div className="containtparent">
+        <div className="containtparent" data-aos="fade-down">
           <h4 className="containt"> All Courses</h4>
           <h1 className={`text-${mode===true?"light":""}`}>Premium Courses</h1>
         </div>
@@ -224,7 +235,7 @@ console.log(data.length)
       {/* <h1 className="mt-4 text-center">Premium Courses</h1> */}
       <div className="d-flex  flex-wrap justify-content-evenly m-4">
         {data.slice(0, visiable).map((items) => {
-          return (<div className="cardWrapper" key={items.id}>
+          return (<div data-aos="zoom-in-up" className="cardWrapper" key={items.id}>
             <div className="cardContainer ">
               <div className={`card mb-5 shadow ${mode===true?"courseCardswhite":""}`} style={{ width: "24rem" }}>
                 <img src={items.imgUrl} className="card-img-top img-fluid img-thumbnail rounded-4" alt="error" />

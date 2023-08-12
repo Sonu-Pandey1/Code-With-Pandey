@@ -1,11 +1,22 @@
 // import React from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 import {BsFacebook,BsGithub,BsTwitter,BsInstagram  } from "react-icons/Bs"
 
 import Footer from "../Footer";
 
 export default function Contact({mode}) {
+  useEffect(()=>{
+     AOS.init({
+      duration:"1000",
+    //   delay:"100",
+      // offset:"1000"
+      
+     });
+  },[]);
   return (
-    <div >
+    <div data-aos="zoom-in" >
       <div className={`contactWrapper ${mode===true?"courseCardswhite":"contactbgcolor"} `}>
       <h1 className={`text-center pt-5 text-${mode===true?"light":""}`}>Feel free to contact us!</h1>
       <div className="imgwrapper mt-4 d-flex justify-content-center">

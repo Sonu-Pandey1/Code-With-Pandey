@@ -1,0 +1,21 @@
+.introcontain h2{
+    margin: 10px;
+}
+#paracontainer p span{
+color: red;
+}
+
+.Button{
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    background-color: aqua;
+}
+.btnarea{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#previousbtn{
+    background-color: rgb(237 208 167 / 40%);
+}

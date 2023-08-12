@@ -1,16 +1,27 @@
 import Footer from "../Footer"
 // import React from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 export default function Login({mode}) {
+    useEffect(()=>{
+     AOS.init({
+      duration:"1000",
+    //   delay:"100",
+      // offset:"1000"
+      
+     });
+  },[]);
     return (
         <div className="">
             <div className="container d-flex justify-content-between">
                 <div className="row">
-                    <div className="col ram">
+                    <div className="col ram" data-aos="zoom-in-up">
                         <img className="loginIconImage" src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-4468581-3783954.png" alt="" />
                     </div>
                 </div>
-                <div className="col ramm">
+                <div className="col ramm" data-aos="zoom-in-up">
                     <div className="loginWrapper">
                         <form action="" className={`form_main ${mode===true?"courseCardswhite":""} `}>
                             <p className="heading">Login</p>

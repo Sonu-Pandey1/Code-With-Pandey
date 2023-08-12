@@ -1,0 +1,49 @@
+.sidebar{
+    width: 17%;
+    position: fixed;
+    overflow-y: scroll;
+    padding: 10px;
+    height:700px;
+    display: block;
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    z-index: 1;
+}
+.sidebar ul{
+    margin: 5px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 21px;
+    list-style: none;
+}
+.sidebar ul li{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px;
+}
+.RightContain{
+    float: right;
+    width: 80%;
+}
+.responsivebtn{
+    display: none;
+    border: none;
+
+}
+
+@media screen and (max-width:900px) {
+    .responsivebtn{
+        display: block;
+        float: right;
+    }
+    .RightContain{
+        width: 100%;
+    }
+    .sidebar{
+    background-color: aliceblue;
+    width: 50%;
+    height: 700px;
+    overflow-y: scroll;
+    }
+}

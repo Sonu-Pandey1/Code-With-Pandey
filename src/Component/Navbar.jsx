@@ -8,13 +8,14 @@ import "../App.css"
 
 export default function Navbar({mode ,modeHandller}) {
     
+  
     let navigate = useNavigate()
     
     return (
-        <div className={`navContainer  shadow ${mode===true?"courseCardswhite":""}`}>
+        <div  className= {`navContainer  shadow ${mode===true?"courseCardswhite":""}`}>
 
             {/* top Navbar here */}
-            <nav className="navbar navb  navbar-expand-lg  p-3">
+            <nav className="navbar navb  navbar-expand-lg  p-3" >
                 <div className="container-fluid">
 
                     <NavLink className={`navbar-brand font-color-700 title ${mode===true?"premaryColor2":"premaryColor"} `} to="/"><span>&lt;</span><span>&#8725;</span><span>&gt;</span>&nbsp;  CodeWithPandey</NavLink>

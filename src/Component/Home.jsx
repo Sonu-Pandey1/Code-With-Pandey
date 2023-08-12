@@ -6,8 +6,21 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 export default function Home({ mode }) {
+
+  useEffect(()=>{
+     AOS.init({
+      duration:"2000",
+      delay:"100",
+      // offset:"1000"
+      // once:"true"
+      
+     });
+  },[]);
   const navigate = useNavigate()
   // slider------>
   const responsive = {
@@ -33,7 +46,7 @@ export default function Home({ mode }) {
     <div className={`text-${mode === true ? "light" : ""}`}>
       <section className={`container-fulid  heroSection text-${mode === true ? "light" : "dark"}`}>
         <div className="row mx-5  heroSectionRow   ">
-          <div className="col-12 ps-5  col-lg-6 heroSectionLeftDiv ">
+          <div className="col-12 ps-5  col-lg-6 heroSectionLeftDiv " data-aos="fade-right">
             <div className="animationleftdiv">
               <h1>Welcome to
                 <Typed className="Typinganimation px-1"
@@ -68,7 +81,7 @@ export default function Home({ mode }) {
               <button onClick={() => { navigate("/blog") }} className="btn btn-light ms-3 border-secondary-subtle  ">Explore Blog</button>
             </div>
           </div>
-          <div className="col col-lg-6 heroSectionRightDiv">
+          <div className="col col-lg-6 heroSectionRightDiv" data-aos="fade-left">
 
             <div className="mainimg ">
               {/* <img className="img-fluid" src="/mainImg.avif" alt="error" /> */}
@@ -79,17 +92,17 @@ export default function Home({ mode }) {
       </section>
 
       <section className="section2 ffff marginbtm">
-        <div className="containtparent">
+        <div className="containtparent" >
           <h4 className="containt"> Free Courses</h4>
           <h1>Recommended Courses</h1>
         </div>
-        <div className="cardcontainnnner p-5 ">
-          <div className="cardwrappper d-flex flex-wrap">
+        <div data-aos="fade-up" className="cardcontainnnner p-5  ">
+          <div className="cardwrappper d-flex flex-wrap" >
             {/* <CourseCard/>
           <CourseCard/>
           <CourseCard/> */}
 
-            <CourseCard mode={mode} title={"Python Tutorials - 100 Days of Code"} about={"Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!"} imgUrl={"https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fpython-100-days-of-code-1%2F7wnove7K-ZQ-HD.jpg&w=384&q=75"} />
+            <CourseCard  mode={mode} title={"Python Tutorials - 100 Days of Code"} about={"Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!"} imgUrl={"https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fpython-100-days-of-code-1%2F7wnove7K-ZQ-HD.jpg&w=384&q=75"} />
 
             <CourseCard mode={mode} title={"Ultimate JavaScript Course"} about={"This latest JavaScript course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free!"} imgUrl={"https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fultimate-js-tutorial-hindi-1%2FJS-Thumb.jpg&w=384&q=75"} />
 
@@ -101,7 +114,7 @@ export default function Home({ mode }) {
 
       </section>
 
-      <section className="section2">
+      <section className="section2" data-aos="fade-up">
         {/* <h1>Testimonials</h1> */}
   <div className="containtparent">
     <h4 className="containt">Testimonials</h4>
@@ -134,7 +147,7 @@ export default function Home({ mode }) {
 
 
 
-      <Footer mode={mode} />
+      <Footer mode={mode}  />
     </div>
   )
 }

@@ -14,7 +14,7 @@ import Html_home from "./Component/Html_home"
 import Page404 from './Component/Page404'
 import Login from './Component/Login'
 import Signup from './Component/Signup'
-
+import Sidebar from './Component/Sidebar'
 function App() {
 
   const [mode, setMode]=useState(false)
@@ -38,7 +38,7 @@ function App() {
         <Route path='/courses' element={<Courses mode={mode} />} />
         <Route path='/tutorial/' element={<Tutorial mode={mode} />}>
         </Route>
-        <Route path='/tutorial/:name' element={<Html_home mode={mode} />} />
+        <Route path='/tutorial/:name' element={<Sidebar mode={mode} />} />
         <Route path='/blog' element={<Blog mode={mode} />} />
         <Route path='/notes' element={<Notes mode={mode} />} />
         <Route path='/contact' element={<Contact mode={mode} />} />

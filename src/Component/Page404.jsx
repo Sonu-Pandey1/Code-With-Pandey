@@ -1,14 +1,25 @@
 // import React from 'react'
 import Footer from "../Footer"
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 import "../App.css"
 // import { NavLink } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 export default function Page404({mode}) {
+  useEffect(()=>{
+     AOS.init({
+      duration:"1000",
+    //   delay:"100",
+      // offset:"1000"
+      
+     });
+  },[]);
   const navigate = useNavigate()
   return (
     <>
-      <div className="Page404maindiv">
-        <div className="divdata ">
+      <div className="Page404maindiv" data-aos="zoom-in-down">
+        <div className="divdata " >
           <h1 className={`text-${mode===true?"light":""}`}>404 - Page Not Found <span><img className="mt-4" src="https://hs-marketing.imgix.net/images/pages/404/illustration-flourish.png?ixlib=gatsbyHook-2.1.1&fit=min&auto=format%2Ccompress&placeholder=dominantColor&w=100&h=30" alt="error" /></span></h1>
 
 

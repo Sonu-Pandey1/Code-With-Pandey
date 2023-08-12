@@ -1,7 +1,20 @@
 // import React from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
+
 import { useState } from "react";
 import Footer from "../Footer";
 export default function Blog({ mode }) {
+  useEffect(()=>{
+     AOS.init({
+      duration:"1000",
+    //   delay:"100",
+      // offset:"1000"
+      
+     });
+  },[]);
+   
   const [visiable, setvisiable] = useState(9);
   let handlePrevious = () => {
     console.log("previous clicked >>>>>>", visiable)
@@ -206,11 +219,11 @@ export default function Blog({ mode }) {
     }
   ]
   return (
-    <div>
+    <div data-aos="fade-down">
       <h1 className={`text-center mt-4  blogH1 text-${mode === true ? "light" : ""}`}>Coding Articles</h1>
       <div className="cardcontainerrrr d-flex flex-wrap justify-content-center p-5 mb-5">
         {data.slice(0, visiable).map((items) => {
-          return <div key={items.id}>
+          return <div data-aos="zoom-in-up" key={items.id}>
             <div className={`card mb-5 ${mode === true ? "courseCardswhite" : ""} shadow-lg`} style={{ width: "80vw" }}>
               <div className={`card-header text-${mode === true ? "light" : ""}`}>
                 {items.date}
